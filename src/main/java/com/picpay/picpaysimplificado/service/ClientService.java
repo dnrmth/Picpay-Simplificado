@@ -1,22 +1,19 @@
 package com.picpay.picpaysimplificado.service;
 
-import com.picpay.picpaysimplificado.dto.TransactionDTO;
-import com.picpay.picpaysimplificado.entities.Client;
-import com.picpay.picpaysimplificado.repository.ClientRepository;
+import com.picpay.picpaysimplificado.repository.UserRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ClientService {
 
-    private final ClientRepository clientRepository;
+    private final UserRepository userRepository;
 
-    public ClientService(ClientRepository clientRepository) {
-        this.clientRepository = clientRepository;
+    public ClientService(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
-    public ResponseEntity<?> MakeTransaction(TransactionDTO transactionDTO) {
-
-        clientRepository.save(transactionDTO);
+    public ResponseEntity<?> CreatePayment() {
+    return null;
     }
 }

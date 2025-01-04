@@ -1,17 +1,22 @@
 package com.picpay.picpaysimplificado.controller;
 
+import com.picpay.picpaysimplificado.dto.TransactionDTO;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController()
 @RequestMapping("/picpay")
 public class PicPayController {
 
-    @PutMapping
-    public ResponseEntity<?> pay() {
+    @PostMapping("/register")
+    public ResponseEntity<?> Register(ClientDTO client) {
         return null;
     }
+
+    @PutMapping
+    public ResponseEntity<?> CreatePayment(@RequestBody TransactionDTO transaction) {
+        return null;
+    }
+
 
 }

@@ -1,9 +1,9 @@
 package com.picpay.picpaysimplificado.repository;
 
-import com.picpay.picpaysimplificado.entities.Client;
+import com.picpay.picpaysimplificado.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ClientRepository extends JpaRepository<Client, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 }
