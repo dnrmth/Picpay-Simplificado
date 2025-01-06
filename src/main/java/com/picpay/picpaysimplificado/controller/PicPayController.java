@@ -1,5 +1,6 @@
 package com.picpay.picpaysimplificado.controller;
 
+import com.picpay.picpaysimplificado.dto.ClientDTO;
 import com.picpay.picpaysimplificado.dto.TransactionDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,12 +1,11 @@
-version: '3.8'
+version: '3.1'
 
 services:
-  db:
-    image: postgres:latest
-    container_name: banking-db
-    environment:
-      POSTGRES_USER: banking-db
-      POSTGRES_PASSWORD: banking
-      POSTGRES_DB: banking
+  picpay-db:
+    image: postgres
     ports:
-        - "5432:5432"
+      - 5433:5432
+    environment:
+      - POSTGRES_DB=picpay-db
+      - POSTGRES_USER=picpay
+      - POSTGRES_PASSWORD=picpay
