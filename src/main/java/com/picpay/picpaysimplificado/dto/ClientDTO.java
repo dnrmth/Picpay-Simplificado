@@ -1,4 +1,13 @@
 package com.picpay.picpaysimplificado.dto;
 
-public record ClientDTO(String name) {
+import com.picpay.picpaysimplificado.enums.UserType;
+
+public record ClientDTO(
+        String fullName,
+        String email,
+        String document,
+        String password,
+        String balance,
+        UserType userType
+        ) {
 }
