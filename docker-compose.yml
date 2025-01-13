@@ -8,3 +8,8 @@ services:
       - POSTGRES_DB=picpay-db
       - POSTGRES_USER=picpay
       - POSTGRES_PASSWORD=picpay
+  picpay-app:
+    image: dnrmth98/picpaysimplificado
+    container_name: inspector-app
+    ports:
+      - "8080:8080"
